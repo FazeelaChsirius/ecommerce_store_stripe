@@ -22,7 +22,7 @@ const Cart = () => {
     if(response.status === 500) return;
     toast.loading('Redirecting...');
   
-    stripe.redirectToCheckout({ sessionId: response.id});
+    stripe.redirectToCheckout({ sessionId: response.data.id});
 
   }
 
