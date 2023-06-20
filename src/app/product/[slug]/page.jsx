@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductDetail from './ProductDetail';
 import { client, urlFor } from '../../../../lib/client';
+import { getProduct } from '../../../../utils/getProduct';
 
 const ProductDetails = async({ params }) => {
 

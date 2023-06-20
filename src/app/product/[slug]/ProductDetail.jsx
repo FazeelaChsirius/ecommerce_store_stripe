@@ -5,7 +5,7 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 import { Product } from '../../../../components';
 import { useStateContext } from '../../../../context/StateContext';
 
-const ProductDetail = ({ product,products }) => {
+const ProductDetail = ({ product,products }) => { 
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart} = useStateContext();

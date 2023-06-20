@@ -1,9 +1,10 @@
+
 import React from 'react';
 import Link from 'next/link';
 
 import { urlFor } from '../lib/client';
 
-const HeroBanner = ({ heroBanner }) => { 
+const HeroBanner = ({ heroBanner }) => {
   return (
     <div className='hero-banner-container'>
       <div>
@@ -14,7 +15,7 @@ const HeroBanner = ({ heroBanner }) => {
         className='hero-banner-image'/>
 
         <div>
-          <Link href={`/product/${heroBanner.product}`}>
+          <Link href={`/product/${heroBanner?.product}`}>
             <button type='button'>{heroBanner.buttonText}</button>
           </Link>
           <div className='desc'>
@@ -28,3 +29,4 @@ const HeroBanner = ({ heroBanner }) => {
 }
 
 export default HeroBanner;
+
