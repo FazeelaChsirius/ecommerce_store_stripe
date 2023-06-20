@@ -43,8 +43,8 @@ export async function POST(request) {
                     quantity: item.quantity
                 };
             }),
-            success_url: `${url}/success`,
-            cancel_url: `${url}/canceled`,
+            success_url: `https://ecommerce-store-stripe-lilac.vercel.app/success`,
+            cancel_url: `https://ecommerce-store-stripe-lilac.vercel.app/canceled`,
             // cancel_url: `${request.headers.origin}/canceled`,
         };
 
