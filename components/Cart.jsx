@@ -17,13 +17,12 @@ const Cart = () => {
   const handleCheckout = async () => {
     const stripe = await getStripe();
   
-    const response = await axios.post('/api/stripe',cartItems); console.log(response)
+    const response = await axios.post('/api/stripe',cartItems); console.log(response);
 
     if(response.status === 500) return;
     toast.loading('Redirecting...');
-    stripe.redirectToCheckout({ sessionId: data.id});
   
-    // stripe.redirectToCheckout({ sessionId: response.data.id});
+    stripe.redirectToCheckout({ sessionId: response.id});
 
   }
 
